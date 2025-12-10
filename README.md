@@ -90,13 +90,6 @@ Backend Engineer — Ho Chi Minh, Vietnam
 
 ### 📊 GitHub Stats
 
-[![Ngia's GitHub stats](https://github-readme-stats.vercel.app/api?username=nghiaphamln&show_icons=true&theme=vue)](https://github.com/nghiaphamln)
--[![Ngia's GitHub stats](https://github-readme-stats.vercel.app/api?username=nghiaphamln&show_icons=true&theme=vue)](https://github.com/nghiaphamln)
-
-- [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=nghiaphamln&layout=compact&theme=vue)](https://github.com/nghiaphamln)
-
-- [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=nghiaphamln&theme=vue)](https://github.com/nghiaphamln)
-
 ![GitHub Contribution Graph](https://ghchart.rshah.org/nghiaphamln)
 ---
 
