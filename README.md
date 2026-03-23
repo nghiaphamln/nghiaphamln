@@ -1,44 +1,3 @@
-## Hi there 👋
-
-<!--
-**nghiaphamln/nghiaphamln** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-You can use this template to quickly highlight current work, projects, and how people can reach you.
--->
-
-### I'm Pham Minh Nghia — Backend Engineer
-
-- Based in Ho Chi Minh, Vietnam
-- Email: `nghiaphamminh3@gmail.com`
-- LinkedIn: https://www.linkedin.com/in/pham-minh-nghia/
-
----
-
-### 🔭 I’m currently working on
-- Building and maintaining high-performance backend services for warehouse operations and automation (order allocation, inventory/location lookups).
-- Project lead for a Rust-based automated e-invoice service integrated with FPT Invoice.
-
-### 🌱 I’m currently learning
-- Deepening systems-level Rust development and observability best practices.
-
-### 👯 I’m looking to collaborate on
-- Backend systems (microservices, event-driven architectures), high-throughput data pipelines, and operational reliability improvements.
-
-### 🤔 I’m looking for help with
-- Open-source examples of production-grade Rust patterns for async processing and retries.
-
-### 💬 Ask me about
-- Migrating monoliths to microservices, SQL Server → PostgreSQL migrations, event-driven order allocation, and designing low-latency master-data APIs.
-
-### ⚡ Fun fact
-- Built a high-performance game server backend and published events to NATS for async processing.
-
----
-
-<!--
-README inspired by the "Kartik" profile template. Customized for Pham Minh Nghia.
--->
-
 ### Hi there 👋 I'm Pham Minh Nghia
 
 Backend Engineer — Ho Chi Minh, Vietnam
@@ -50,7 +9,7 @@ Backend Engineer — Ho Chi Minh, Vietnam
 - Leading a Rust-based e-invoice project (project lead, 3-dev team) to fully automate daily invoice generation and submission to FPT Invoice.
 - Building high-throughput backend systems for warehouse operations: event-driven order allocation, location-inventory lookups, and system revamps.
 
-### 🌱 I’m learning
+### 🌱 I'm learning
 
 - Advanced Rust for systems programming and production observability patterns.
 
@@ -91,14 +50,3 @@ Backend Engineer — Ho Chi Minh, Vietnam
 ### 📊 GitHub Stats
 
 ![GitHub Contribution Graph](https://ghchart.rshah.org/nghiaphamln)
----
-
-### 📫 Connect
-
-- Email: `nghiaphamminh3@gmail.com`
-- LinkedIn: https://www.linkedin.com/in/pham-minh-nghia/
-- GitHub: https://github.com/nghiaphamln
-
----
-
-*If you'd like a tailored resume, a focused one-page CV, or a LinkedIn summary, tell me which target role and I’ll prepare a version for it.*
