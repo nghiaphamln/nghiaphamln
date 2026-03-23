@@ -6,6 +6,10 @@
   </a>
 </p>
 
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=nghiaphamln&style=for-the-badge&color=70a5fd&label=PROFILE+VIEWS" alt="Profile Views" />
+</p>
+
 ---
 
 ### 🧑‍💻 About Me
@@ -53,6 +57,20 @@
 
 ---
 
+<details>
+<summary><b>🏗️ Architecture Principles I Follow</b></summary>
+<br/>
+
+- Event-Driven Architecture with message brokers (RabbitMQ / Kafka / NATS)
+- Clean Architecture with clear domain boundaries
+- CQRS for read/write separation in high-throughput services
+- Containerized deployments with Docker
+- Observability-first: structured logging, distributed tracing, metrics dashboards (Grafana, Loki, Graylog)
+
+</details>
+
+---
+
 ### 📊 GitHub Stats
 
 <p align="center">
@@ -66,6 +84,14 @@
 
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=nghiaphamln&theme=tokyo-night&hide_border=true&bg_color=1a1b27&color=70a5fd&line=bf91f3&point=38bdae" width="100%" />
+</p>
+
+---
+
+<p align="center">
+  <a href="https://github.com/piyushsuthar/github-readme-quotes">
+    <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight&border=true" alt="Dev Quote" />
+  </a>
 </p>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1b27,100:70a5fd&height=120&section=footer" width="100%" />
