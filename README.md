@@ -68,10 +68,4 @@
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=nghiaphamln&theme=tokyo-night&hide_border=true&bg_color=1a1b27&color=70a5fd&line=bf91f3&point=38bdae" width="100%" />
 </p>
 
----
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=nghiaphamln&theme=tokyonight&no-frame=true&column=7&margin-w=10" />
-</p>
-
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1b27,100:70a5fd&height=120&section=footer" width="100%" />
