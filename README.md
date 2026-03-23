@@ -10,10 +10,10 @@
 
 ### 🧑‍💻 About Me
 
-- 🏠 Based in **Ho Chi Minh, Vietnam**
-- 🔭 Leading a **Rust-based e-invoice project** (3-dev team) — fully automated daily invoice generation & submission
-- ⚙️ Building **high-throughput backend systems** for warehouse operations: event-driven order allocation, location-inventory lookups
-- 🌱 Deepening **systems-level Rust** and **production observability** patterns
+- Based in **Ho Chi Minh, Vietnam**
+- Leading a **Rust-based e-invoice project** (3-dev team) — fully automated daily invoice generation & submission
+- Building **high-throughput backend systems** for warehouse operations: event-driven order allocation, location-inventory lookups
+- Deepening **systems-level Rust** and **production observability** patterns
 
 <p align="center">
   <a href="mailto:nghiaphamminh3@gmail.com"><img src="https://img.shields.io/badge/Email-nghiaphamminh3%40gmail.com-blue?style=for-the-badge&logo=gmail&logoColor=white" /></a>
