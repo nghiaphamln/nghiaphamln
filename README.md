@@ -15,9 +15,10 @@
 ### 🧑‍💻 About Me
 
 - Based in **Ho Chi Minh, Vietnam**
-- Leading a **Rust-based e-invoice project** (3-dev team) — fully automated daily invoice generation & submission
-- Building **high-throughput backend systems** for warehouse operations: event-driven order allocation, location-inventory lookups
+- Platform Owner for the full **WMS platform at Sendo** — maintaining all warehouse microservices post-revamp
+- Built Rust-based services in production: e-invoice pipeline (~15K invoices/day), streaming export (~6M rows, 128MB peak RAM)
 - Deepening **systems-level Rust** and **production observability** patterns
+- 🏆 **Outstanding Employee of 2025** at Sendo
 
 <p align="center">
   <a href="mailto:nghiapm.dev@gmail.com"><img src="https://img.shields.io/badge/Email-nghiapm.dev%40gmail.com-blue?style=for-the-badge&logo=gmail&logoColor=white" /></a>
@@ -40,9 +41,11 @@
 ### 📌 Selected Highlights
 
 - Rebuilt order-allocation service with **~90% faster processing** (event-driven; 200 orders allocated in 5s)
-- Led migration **SQL Server → PostgreSQL** and redesigned services using **.NET 9 + Clean Architecture**
-- Delivered Rust-based e-invoice service; reduced runtime resources by **~90%** vs .NET and automated daily invoice submission
-- Implemented location-inventory service with **sub-150ms** lookups (master-data queries 1–20ms; specialized workflows <200ms)
+- Built Rust streaming export pipeline: memory peak from **~5GB to ~128MB** for monthly exports up to **6M rows**
+- Resolved N+1 query bottlenecks across multiple modules: **~30s → <200ms**
+- Delivered e-invoice service in Rust processing **~15K invoices/day** in production
+- Implemented location-inventory service with **sub-150ms** lookups (master-data 1–20ms; business workflows <200ms)
+- Automated purchase order generation — reduced PO creation time by **~60%**
 
 ---
 
@@ -50,10 +53,12 @@
 
 | Project | Description |
 |---------|-------------|
-| **E-invoice Service (Rust)** | Project lead. End-to-end pipeline: ingest → validate → store → submit → retry/monitor. ~90% resource reduction |
-| **Warehouse Revamp** | Led microservices migration (.NET 9), database migration to PostgreSQL, Elasticsearch ILM adoption |
-| **Order Allocation** | Replaced synchronous flow with event-driven processing; improved throughput and stability |
-| **Location-inventory Service** | High-performance lookup service for warehouse ops (sub-150ms) |
+| **Export Flow Revamp (Rust)** | Project lead. Streaming pipeline replacing Golang service; 5GB → 128MB RAM for 6M-row exports |
+| **E-invoice Service (Rust)** | Project lead. Order delivery → invoice generation → customer notification. ~15K invoices/day |
+| **Purchase Order Automation** | Sole implementer. Rule-based daily PO + invoice generation; ~60% time reduction vs manual |
+| **Warehouse Revamp** | Contributed to microservices migration (.NET), SQL Server → PostgreSQL, 10+ independent services |
+| **Order Allocation** | Replaced synchronous flow with event-driven processing; >90% faster, 200 orders in 5s |
+| **Location-inventory Service** | Designed from scratch. High-performance lookup with distributed locks; sub-150ms response |
 
 ---
 
