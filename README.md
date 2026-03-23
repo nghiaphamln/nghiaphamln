@@ -62,6 +62,15 @@
 
 ---
 
+### 🚀 Side Projects
+
+| Project | Description |
+|---------|-------------|
+| **Game Server (.NET 10 + Rust)** | Personal multiplayer farming game — TCP server, CMS (Go + React), Rust analytics pipeline, mail sender, self-hosted K3s infra |
+| **rust-rabbit** | Open-source RabbitMQ client for Rust. MassTransit interop, retry strategies, DLQ. Published on [crates.io](https://crates.io/crates/rust-rabbit) |
+
+---
+
 <details>
 <summary><b>🏗️ Architecture Principles I Follow</b></summary>
 <br/>
