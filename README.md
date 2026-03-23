@@ -20,7 +20,7 @@
 - Deepening **systems-level Rust** and **production observability** patterns
 
 <p align="center">
-  <a href="mailto:nghiaphamminh3@gmail.com"><img src="https://img.shields.io/badge/Email-nghiaphamminh3%40gmail.com-blue?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+  <a href="mailto:nghiapm.dev@gmail.com"><img src="https://img.shields.io/badge/Email-nghiapm.dev%40gmail.com-blue?style=for-the-badge&logo=gmail&logoColor=white" /></a>
   <a href="https://www.linkedin.com/in/pham-minh-nghia/"><img src="https://img.shields.io/badge/LinkedIn-Pham%20Minh%20Nghia-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
   <a href="https://github.com/nghiaphamln"><img src="https://img.shields.io/badge/GitHub-nghiaphamln-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
 </p>
