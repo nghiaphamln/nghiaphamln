@@ -59,13 +59,14 @@ jobs:
         run: |
           set -euo pipefail
 
-          if git diff --quiet -- "$STREAK_SVG_PATH" "$ACTIVITY_GRAPH_SVG_PATH"; then
+          git add "$STREAK_SVG_PATH" "$ACTIVITY_GRAPH_SVG_PATH"
+
+          if git diff --cached --quiet -- "$STREAK_SVG_PATH" "$ACTIVITY_GRAPH_SVG_PATH"; then
             echo "No mirrored asset changes to commit"
             exit 0
           fi
 
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add "$STREAK_SVG_PATH" "$ACTIVITY_GRAPH_SVG_PATH"
           git commit -m "chore: refresh mirrored profile SVG assets"
           git push
