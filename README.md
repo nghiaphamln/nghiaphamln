@@ -93,11 +93,11 @@
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=nghiaphamln&theme=tokyonight&hide_border=true&background=1a1b27" />
+  <img src="https://raw.githubusercontent.com/nghiaphamln/nghiaphamln/main/profile-summary-card-output/tokyonight/5-streak.svg" alt="GitHub contribution streak" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=nghiaphamln&theme=tokyo-night&hide_border=true&bg_color=1a1b27&color=70a5fd&line=bf91f3&point=38bdae" width="100%" />
+  <img src="https://raw.githubusercontent.com/nghiaphamln/nghiaphamln/main/profile-summary-card-output/tokyonight/6-activity-graph.svg" alt="GitHub activity graph" width="100%" />
 </p>
 
 ---
