@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://github.com/nghiaphamln">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=70A5FD&center=true&vCenter=true&width=600&lines=Building+High-Throughput+Backend+Systems;Event-Driven+Architectures+%26+Microservices;Rust+%7C+.NET+%7C+PostgreSQL+%7C+Redis;Sub-150ms+API+Response+Times" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=70A5FD&center=true&vCenter=true&width=600&lines=Building+High-Throughput+Backend+Systems;Event-Driven+Architectures+%26+Microservices;.NET+%7C+Rust+%7C+PostgreSQL+%7C+Redis;Performance-Focused+Backend+Delivery" alt="Typing SVG" />
   </a>
 </p>
 
@@ -15,9 +15,9 @@
 ### 🧑‍💻 About Me
 
 - Based in **Ho Chi Minh, Vietnam**
-- Platform Owner for the full **WMS platform at Sendo** — maintaining all warehouse microservices post-revamp
-- Built Rust-based services in production: e-invoice pipeline (~15K invoices/day), streaming export (~6M rows, 128MB peak RAM)
-- Deepening **systems-level Rust** and **production observability** patterns
+- Backend Engineer maintaining Sendo's post-revamp **WMS platform** across warehouse, inventory, order allocation, export, and e-invoice services
+- Built production Rust services: e-invoice processing **~15K invoices/day** and streaming exports up to **6M rows** with **~128MB peak RAM**
+- Focused on **systems-oriented Rust**, **event-driven backend design**, and **production observability**
 - 🏆 **Outstanding Employee of 2025** at Sendo
 
 <p align="center">
@@ -32,7 +32,7 @@
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=rust,dotnet,cs,postgres,redis,elasticsearch,rabbitmq,kafka,docker,grafana,git,linux&theme=dark&perline=6" />
+    <img src="https://skillicons.dev/icons?i=dotnet,cs,rust,postgres,redis,elasticsearch,rabbitmq,kafka,docker,grafana,git,linux&theme=dark&perline=6" />
   </a>
 </p>
 
@@ -40,12 +40,12 @@
 
 ### 📌 Selected Highlights
 
-- Rebuilt order-allocation service with **~90% faster processing** (event-driven; 200 orders allocated in 5s)
-- Built Rust streaming export pipeline: memory peak from **~5GB to ~128MB** for monthly exports up to **6M rows**
-- Resolved N+1 query bottlenecks across multiple modules: **~30s → <200ms**
-- Delivered e-invoice service in Rust processing **~15K invoices/day** in production
-- Implemented location-inventory service with **sub-150ms** lookups (master-data 1–20ms; business workflows <200ms)
-- Automated purchase order generation — reduced PO creation time by **~60%**
+- Rebuilt order allocation into an **event-driven flow**: **~90% faster**, with **200 orders allocated in 5s**
+- Led a Rust export revamp that reduced memory peak from **~5GB to ~128MB** for exports up to **6M rows**
+- Resolved N+1 bottlenecks across warehouse modules: **~30s → <200ms**
+- Built a Rust-based e-invoice service processing **~15K invoices/day** in production
+- Designed and built the core inventory service with **sub-150ms** location lookups
+- Automated purchase order generation and reduced creation time by **~60%**
 
 ---
 
@@ -53,12 +53,12 @@
 
 | Project | Description |
 |---------|-------------|
-| **Export Flow Revamp (Rust)** | Project lead. Streaming pipeline replacing Golang service; 5GB → 128MB RAM for 6M-row exports |
-| **E-invoice Service (Rust)** | Project lead. Order delivery → invoice generation → customer notification. ~15K invoices/day |
+| **Export Flow Revamp (Rust)** | Technical lead (3-dev team). Streaming export pipeline replacing a legacy Go service; ~5GB → ~128MB RAM for exports up to 6M rows |
+| **E-invoice Service (Rust)** | Technical lead (3-dev team). Delivery-to-invoice automation pipeline processing ~15K invoices/day in production |
 | **Purchase Order Automation** | Sole implementer. Rule-based daily PO + invoice generation; ~60% time reduction vs manual |
-| **Warehouse Revamp** | Contributed to microservices migration (.NET), SQL Server → PostgreSQL, 10+ independent services |
+| **Warehouse Revamp** | Contributed to splitting a shared warehouse platform into 10+ .NET microservices and SQL Server → PostgreSQL migration |
 | **Order Allocation** | Replaced synchronous flow with event-driven processing; >90% faster, 200 orders in 5s |
-| **Location-inventory Service** | Designed from scratch. High-performance lookup with distributed locks; sub-150ms response |
+| **Inventory Service** | Designed and built from scratch with concurrency safeguards and sub-150ms location lookups |
 
 ---
 
@@ -66,8 +66,8 @@
 
 | Project | Description |
 |---------|-------------|
-| **Game Server (.NET 10 + Rust)** | Personal multiplayer farming game — TCP server, CMS (Go + React), Rust analytics pipeline, mail sender, self-hosted K3s infra |
-| **rust-rabbit** | Open-source RabbitMQ client for Rust. MassTransit interop, retry strategies, DLQ. Published on [crates.io](https://crates.io/crates/rust-rabbit) |
+| **Game Server (.NET 10 + Rust)** | Self-hosted multiplayer game platform with a TCP server, admin CMS (Go + React), Rust analytics pipeline, mail sender, and K3s-based infrastructure |
+| **rust-rabbit** | Open-source RabbitMQ client for Rust with MassTransit-compatible interoperability, retry strategies, and DLQ support. Published on [crates.io](https://crates.io/crates/rust-rabbit) |
 
 ---
 
@@ -77,7 +77,7 @@
 
 - Event-Driven Architecture with message brokers (RabbitMQ / Kafka / NATS)
 - Clean Architecture with clear domain boundaries
-- CQRS for read/write separation in high-throughput services
+- Read/write separation where high-throughput workflows require it
 - Containerized deployments with Docker
 - Observability-first: structured logging, distributed tracing, metrics dashboards (Grafana, Loki, Graylog)
 
