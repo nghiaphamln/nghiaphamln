@@ -88,8 +88,8 @@
 ### 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=nghiaphamln&show_icons=true&theme=tokyonight&hide_border=true&bg_color=1a1b27" height="170" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nghiaphamln&layout=compact&theme=tokyonight&hide_border=true&bg_color=1a1b27" height="170" />
+  <img src="https://raw.githubusercontent.com/nghiaphamln/nghiaphamln/main/profile-summary-card-output/tokyonight/3-stats.svg" alt="GitHub stats" height="170" />
+  <img src="https://raw.githubusercontent.com/nghiaphamln/nghiaphamln/main/profile-summary-card-output/tokyonight/1-repos-per-language.svg" alt="Top languages by repository" height="170" />
 </p>
 
 <p align="center">
