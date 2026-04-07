@@ -27,7 +27,7 @@ jobs:
           BRANCH_NAME: main
           UTC_OFFSET: 7
           EXCLUDE: html,css
-          AUTO_PUSH: true
+          AUTO_PUSH: false
 
       - name: Mirror streak and activity graph SVGs
         shell: bash
@@ -54,19 +54,19 @@ jobs:
             exit 1
           fi
 
-      - name: Commit mirrored assets when changed
+      - name: Commit generated profile SVG assets when changed
         shell: bash
         run: |
           set -euo pipefail
 
-          git add "$STREAK_SVG_PATH" "$ACTIVITY_GRAPH_SVG_PATH"
+          git add profile-summary-card-output
 
-          if git diff --cached --quiet -- "$STREAK_SVG_PATH" "$ACTIVITY_GRAPH_SVG_PATH"; then
-            echo "No mirrored asset changes to commit"
+          if git diff --cached --quiet -- profile-summary-card-output; then
+            echo "No generated profile SVG changes to commit"
             exit 0
           fi
 
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git commit -m "chore: refresh mirrored profile SVG assets"
+          git commit -m "chore: refresh generated profile SVG assets"
           git push
