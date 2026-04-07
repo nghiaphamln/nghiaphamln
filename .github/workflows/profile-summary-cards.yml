@@ -11,6 +11,7 @@ jobs:
     permissions:
       contents: write
     env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
       STREAK_SVG_PATH: profile-summary-card-output/tokyonight/5-streak.svg
       ACTIVITY_GRAPH_SVG_PATH: profile-summary-card-output/tokyonight/6-activity-graph.svg
 
@@ -35,6 +36,12 @@ jobs:
           set -euo pipefail
 
           mkdir -p "$(dirname "$STREAK_SVG_PATH")"
+
+          rm -f \
+            profile-summary-card-output/tokyonight/0-profile-details.svg \
+            profile-summary-card-output/tokyonight/2-most-commit-language.svg \
+            profile-summary-card-output/tokyonight/4-productive-time.svg \
+            profile-summary-card-output/tokyonight/README.md
 
           curl -fsSL "https://streak-stats.demolab.com?user=${{ github.repository_owner }}&theme=tokyonight&hide_border=true&background=1a1b27" -o streak.tmp.svg
           if grep -q "<svg" streak.tmp.svg; then
