@@ -1,7 +1,7 @@
-name: Profile Summary Cards
+name: SVGs
 
 concurrency:
-  group: profile-summary-cards-main
+  group: profile-svgs-main
   cancel-in-progress: false
 
 on:
@@ -20,21 +20,21 @@ jobs:
       ACTIVITY_GRAPH_SVG_PATH: profile-summary-card-output/tokyonight/6-activity-graph.svg
 
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v6
 
-      - name: Set up Node.js
+      - name: Node
         uses: actions/setup-node@v6.3.0
         with:
           node-version: 24
 
-      - name: Generate stats and language SVGs
+      - name: Build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: ${{ github.repository_owner }}
         run: node scripts/generate-profile-stats.mjs
 
-      - name: Mirror streak and activity graph SVGs
+      - name: Sync
         shell: bash
         run: |
           set -euo pipefail
@@ -65,7 +65,7 @@ jobs:
             exit 1
           fi
 
-      - name: Commit generated profile SVG assets when changed
+      - name: Push
         shell: bash
         run: |
           set -euo pipefail
