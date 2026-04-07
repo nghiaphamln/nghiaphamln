@@ -1,5 +1,9 @@
 name: Profile Summary Cards
 
+concurrency:
+  group: profile-summary-cards-main
+  cancel-in-progress: false
+
 on:
   schedule:
     - cron: "0 0 * * *"
@@ -76,4 +80,5 @@ jobs:
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
           git commit -m "chore: refresh generated profile SVG assets"
+          git pull --rebase origin main
           git push
