@@ -17,8 +17,6 @@ jobs:
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
       OUT_DIR: profile-summary-card-output/tokyonight
-      STREAK_SVG: profile-summary-card-output/tokyonight/5-streak.svg
-      GRAPH_SVG: profile-summary-card-output/tokyonight/6-activity-graph.svg
 
     steps:
       - name: Checkout
@@ -35,7 +33,7 @@ jobs:
           GITHUB_USERNAME: ${{ github.repository_owner }}
         run: node scripts/generate-profile-stats.mjs
 
-      - name: Sync
+      - name: Cleanup
         shell: bash
         run: |
           set -euo pipefail
@@ -47,24 +45,6 @@ jobs:
             "$OUT_DIR/2-most-commit-language.svg" \
             "$OUT_DIR/4-productive-time.svg" \
             "$OUT_DIR/README.md"
-
-          curl -fsSL "https://streak-stats.demolab.com?user=${{ github.repository_owner }}&theme=tokyonight&hide_border=true&background=1a1b27" -o streak.tmp.svg
-          if grep -q "<svg" streak.tmp.svg; then
-            mv streak.tmp.svg "$STREAK_SVG"
-          else
-            rm -f streak.tmp.svg
-            echo "Fetched streak asset is not a valid SVG"
-            exit 1
-          fi
-
-          curl -fsSL "https://github-readme-activity-graph.vercel.app/graph?username=${{ github.repository_owner }}&theme=tokyo-night&hide_border=true&bg_color=1a1b27&color=70a5fd&line=bf91f3&point=38bdae" -o graph.tmp.svg
-          if grep -q "<svg" graph.tmp.svg; then
-            mv graph.tmp.svg "$GRAPH_SVG"
-          else
-            rm -f graph.tmp.svg
-            echo "Fetched activity graph asset is not a valid SVG"
-            exit 1
-          fi
 
       - name: Push
         shell: bash
